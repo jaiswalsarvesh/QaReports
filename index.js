@@ -1,5 +1,5 @@
 const container=document.getElementById('container-report');
-reportsArray=['esvm.html','esvm.html','esvm.html','esvm.html','esvm.html'];
+reportsArray=['esvm.html','webserver.html','esvm.html','esvm.html','esvm.html'];
 console.log(container);
 container.innerHTML='';
 for(let i =0;i<reportsArray.length;i++){
