@@ -1,0 +1,694 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mochawesome Report Card</title>
+    
+    <link rel="stylesheet" href="css/mochawesome.css">
+  </head>
+  <body>
+
+    <!-- NAVBAR -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="report-info-cnt">
+          <h1 class="report-title">ESVM Classifier Automation</h1>
+          <h3 class="report-date">Monday, February 27 2023, 06:22pm</h3>
+        </div>
+        <div class="nav-right">
+          <div class="quick-summary-cnt">
+              <ul class="list-unstyled quick-summary">
+                <li class="qs-item summary-duration" title="Duration">7:53<span>M</span></li>
+                <li class="qs-item summary-suites" title="Suites">1</li>
+                <li class="qs-item summary-tests" title="Tests">26</li>
+                <li class="qs-item summary-passes" title="Passed" data-filter="passed">10</li>
+                <li class="qs-item summary-failures" title="Failed" data-filter="failed">16</li>
+                <li class="qs-item summary-pending" title="Pending" data-filter="pending">0</li>
+              </ul>          </div>
+          <button class="nav-menu-btn open-menu"><i class="icon-menu"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Report Summary -->
+    <div class="summary">
+      <div class="container">
+          <div class="row">
+            <div class="summary-col summary-duration">
+              <h1 class="summary-count">7:53<span>M</span></h1>
+              <h4 class="summary-label">M</h4>
+            </div>
+            <div class="summary-col summary-suites" title="Suites">
+              <h1 class="summary-count">1</h1>
+              <h4 class="summary-label">Suite</h4>
+            </div>
+            <div class="summary-col summary-tests" title="Tests">
+              <h1 class="summary-count">26</h1>
+              <h4 class="summary-label">Tests</h4>
+            </div>
+            <div class="summary-col summary-passes" data-filter="passed" title="Passed">
+              <h1 class="summary-count">10</h1>
+              <h4 class="summary-label">Passed</h4>
+            </div>
+            <div class="summary-col summary-failures" data-filter="failed" title="Failed">
+              <h1 class="summary-count">16</h1>
+              <h4 class="summary-label">Failed</h4>
+            </div>
+            <div class="summary-col summary-pending" data-filter="pending" title="Pending">
+              <h1 class="summary-count">0</h1>
+              <h4 class="summary-label">Pending</h4>
+            </div>
+          </div>      </div>
+    </div>
+    <div class="statusbar">
+      <div class="container">
+          <div class="row">
+            <div class="status-item status-item-pending-pct">0% Pending</div>
+            <div class="status-item status-item-passing-pct danger">38.5% Passing</div>
+          </div>      </div>
+    </div>
+
+    <!-- Suites -->
+    <div class="details container">
+            <section class="suite-wrap">
+          <div id="ef173043-0745-4750-b667-600b9d15af97" class="suite has-tests has-passed has-failed">
+            <h3 class="suite-title">ESVM Classifier Automation</h3>
+            <h5 class="suite-filename">/index.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="ef173043-0745-4750-b667-600b9d15af97" class="suite-chart" width="50" height="50" data-total-passes="10" data-total-failures="16" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">7:50.282 m</li>
+                <li class="suite-summary-item tests">26</li>
+                <li class="suite-summary-item passed">10</li>
+                <li class="suite-summary-item failed">16</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#ef173043-0745-4750-b667-600b9d15af97-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="ef173043-0745-4750-b667-600b9d15af97-test-list" class="list-group test-list collapse in">
+                    <div id="6e7638a4-d433-4a23-b5d8-bcd846863c41" class="list-group-item test failed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              TEST ID : 14100 : classifier Upload query response UNKNOWN for all API versions
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#6e7638a4-d433-4a23-b5d8-bcd846863c41 > .test-code.collapse">Code</button>
+              <span class="test-duration ">8.520 s</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+            <p class="test-error-message">AssertionError: expected { Object (C, A, ...) } to deeply equal { C: &#x27;U&#x27;, TT: &#x27;30&#x27; }
+              <button class="btn btn-link btn-sm toggle-btn toggle-stack collapsed" data-toggle="collapse" data-target="#6e7638a4-d433-4a23-b5d8-bcd846863c41 > .test-error-stack.collapse">Stack</button>
+            </p>
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">res.helper(res.constants[res.id], testConfig.CLASSIFIER_TEST_CONFIG)</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+          <div class="test-error-stack collapse">
+            <pre><code class="hljs small">AssertionError: expected { Object (C, A, ...) } to deeply equal { C: 'U', TT: '30' }<br>    at Assertion.assertEqual (node_modules/chai/lib/chai/core/assertions.js:485:19)<br>    at Assertion.ctx.(anonymous function) (node_modules/chai/lib/chai/utils/addMethod.js:41:25)<br>    at Assertion.&lt;anonymous&gt; (node_modules/chai-exclude/lib/chai-exclude.js:119:14)<br>    at Assertion.ctx.(anonymous function) [as equals] (node_modules/chai/lib/chai/utils/overwriteMethod.js:49:33)<br>    at tests/generic_classifier/validator.js:480:36<br>    at next (native)<br>    at onFulfilled (node_modules/co/index.js:65:19)<br>    at node_modules/co/index.js:54:5<br>    at co (node_modules/co/index.js:50:10)<br>    at validateV1QueryReponse (tests/generic_classifier/validator.js:469:10)<br>    at tests/generic_classifier/validator.js:442:15<br>    at next (native)<br>    at onFulfilled (node_modules/co/index.js:65:19)<br>    at node_modules/co/index.js:54:5<br>    at co (node_modules/co/index.js:50:10)<br>    at validateResponse (tests/generic_classifier/validator.js:439:10)<br>    at tests/generic_classifier/validator.js:45:17<br>    at next (native)<br>    at onFulfilled (node_modules/co/index.js:65:19)<br>    at process._tickCallback (internal/process/next_tick.js:109:7)</code></pre>
+          </div>
+        </div>            <div id="c45efc5f-cb27-429c-b01b-68f7fcbb9cef" class="list-group-item test failed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              TEST ID : 14101 : classifier Upload query response DIRTY for all API versions
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#c45efc5f-cb27-429c-b01b-68f7fcbb9cef > .test-code.collapse">Code</button>
+              <span class="test-duration ">17.323 s</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+            <p class="test-error-message">AssertionError: expected true to deeply equal false
+              <button class="btn btn-link btn-sm toggle-btn toggle-stack collapsed" data-toggle="collapse" data-target="#c45efc5f-cb27-429c-b01b-68f7fcbb9cef > .test-error-stack.collapse">Stack</button>
+            </p>
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">res.helper(res.constants[res.id], testConfig.CLASSIFIER_TEST_CONFIG)</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+          <div class="test-error-stack collapse">
+            <pre><code class="hljs small">AssertionError: expected true to deeply equal false<br>    at Assertion.assertEqual (node_modules/chai/lib/chai/core/assertions.js:485:19)<br>    at Assertion.ctx.(anonymous function) (node_modules/chai/lib/chai/utils/addMethod.js:41:25)<br>    at Assertion.&lt;anonymous&gt; (node_modules/chai-exclude/lib/chai-exclude.js:119:14)<br>    at Assertion.ctx.(anonymous function) [as equal] (node_modules/chai/lib/chai/utils/overwriteMethod.js:49:33)<br>    at tests/generic_classifier/validator.js:753:74<br>    at next (native)<br>    at onFulfilled (node_modules/co/index.js:65:19)<br>    at process._tickCallback (internal/process/next_tick.js:109:7)</code></pre>
+          </div>
+        </div>            <div id="03833939-4e8b-4f1d-9272-6f556a329326" class="list-group-item test failed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              TEST ID : 14105 : classifier Upload query response Silent for DIRTY sample due to Global config silent
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#03833939-4e8b-4f1d-9272-6f556a329326 > .test-code.collapse">Code</button>
+              <span class="test-duration ">7.191 s</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+            <p class="test-error-message">AssertionError: expected { Object (C, A, ...) } to deeply equal { Object (C, A, ...) }
+              <button class="btn btn-link btn-sm toggle-btn toggle-stack collapsed" data-toggle="collapse" data-target="#03833939-4e8b-4f1d-9272-6f556a329326 > .test-error-stack.collapse">Stack</button>
+            </p>
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">res.helper(res.constants[res.id], testConfig.CLASSIFIER_TEST_CONFIG)</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+          <div class="test-error-stack collapse">
+            <pre><code class="hljs small">AssertionError: expected { Object (C, A, ...) } to deeply equal { Object (C, A, ...) }<br>    at Assertion.assertEqual (node_modules/chai/lib/chai/core/assertions.js:485:19)<br>    at Assertion.ctx.(anonymous function) (node_modules/chai/lib/chai/utils/addMethod.js:41:25)<br>    at Assertion.&lt;anonymous&gt; (node_modules/chai-exclude/lib/chai-exclude.js:119:14)<br>    at Assertion.ctx.(anonymous function) [as equals] (node_modules/chai/lib/chai/utils/overwriteMethod.js:49:33)<br>    at tests/generic_classifier/validator.js:484:34<br>    at next (native)<br>    at onFulfilled (node_modules/co/index.js:65:19)<br>    at node_modules/co/index.js:54:5<br>    at co (node_modules/co/index.js:50:10)<br>    at validateV1QueryReponse (tests/generic_classifier/validator.js:469:10)<br>    at tests/generic_classifier/validator.js:442:15<br>    at next (native)<br>    at onFulfilled (node_modules/co/index.js:65:19)<br>    at node_modules/co/index.js:54:5<br>    at co (node_modules/co/index.js:50:10)<br>    at validateResponse (tests/generic_classifier/validator.js:439:10)<br>    at tests/generic_classifier/validator.js:45:17<br>    at next (native)<br>    at onFulfilled (node_modules/co/index.js:65:19)<br>    at process._tickCallback (internal/process/next_tick.js:109:7)</code></pre>
+          </div>
+        </div>            <div id="72bda50b-e864-48a7-9688-c4edb3ff5f4f" class="list-group-item test failed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              TEST ID : 14106 : classifier Upload query response Silent for DIRTY sample due to Client config silent
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#72bda50b-e864-48a7-9688-c4edb3ff5f4f > .test-code.collapse">Code</button>
+              <span class="test-duration ">7.159 s</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+            <p class="test-error-message">AssertionError: expected { Object (C, A, ...) } to deeply equal { Object (C, A, ...) }
+              <button class="btn btn-link btn-sm toggle-btn toggle-stack collapsed" data-toggle="collapse" data-target="#72bda50b-e864-48a7-9688-c4edb3ff5f4f > .test-error-stack.collapse">Stack</button>
+            </p>
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">res.helper(res.constants[res.id], testConfig.CLASSIFIER_TEST_CONFIG)</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+          <div class="test-error-stack collapse">
+            <pre><code class="hljs small">AssertionError: expected { Object (C, A, ...) } to deeply equal { Object (C, A, ...) }<br>    at Assertion.assertEqual (node_modules/chai/lib/chai/core/assertions.js:485:19)<br>    at Assertion.ctx.(anonymous function) (node_modules/chai/lib/chai/utils/addMethod.js:41:25)<br>    at Assertion.&lt;anonymous&gt; (node_modules/chai-exclude/lib/chai-exclude.js:119:14)<br>    at Assertion.ctx.(anonymous function) [as equals] (node_modules/chai/lib/chai/utils/overwriteMethod.js:49:33)<br>    at tests/generic_classifier/validator.js:484:34<br>    at next (native)<br>    at onFulfilled (node_modules/co/index.js:65:19)<br>    at node_modules/co/index.js:54:5<br>    at co (node_modules/co/index.js:50:10)<br>    at validateV1QueryReponse (tests/generic_classifier/validator.js:469:10)<br>    at tests/generic_classifier/validator.js:442:15<br>    at next (native)<br>    at onFulfilled (node_modules/co/index.js:65:19)<br>    at node_modules/co/index.js:54:5<br>    at co (node_modules/co/index.js:50:10)<br>    at validateResponse (tests/generic_classifier/validator.js:439:10)<br>    at tests/generic_classifier/validator.js:45:17<br>    at next (native)<br>    at onFulfilled (node_modules/co/index.js:65:19)<br>    at process._tickCallback (internal/process/next_tick.js:109:7)</code></pre>
+          </div>
+        </div>            <div id="ecf549d0-de6c-43a1-884f-bf6c9e42009f" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              TEST ID : 14114 : classifier FAST query response send Trace
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#ecf549d0-de6c-43a1-884f-bf6c9e42009f > .test-code.collapse">Code</button>
+              <span class="test-duration slow">27.362 s</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">res.helper(res.constants[res.id], testConfig.CLASSIFIER_TEST_CONFIG)</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="8838d78f-1602-463b-b13c-2454a9a67244" class="list-group-item test failed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              TEST ID : 14117 : classifier Fast query response Silent for DIRTY sample due to Global config silent
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#8838d78f-1602-463b-b13c-2454a9a67244 > .test-code.collapse">Code</button>
+              <span class="test-duration ">13.690 s</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+            <p class="test-error-message">AssertionError: expected { C: &#x27;T&#x27;, TT: &#x27;30&#x27; } to deeply equal { Object (C, A, ...) }
+              <button class="btn btn-link btn-sm toggle-btn toggle-stack collapsed" data-toggle="collapse" data-target="#8838d78f-1602-463b-b13c-2454a9a67244 > .test-error-stack.collapse">Stack</button>
+            </p>
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">res.helper(res.constants[res.id], testConfig.CLASSIFIER_TEST_CONFIG)</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+          <div class="test-error-stack collapse">
+            <pre><code class="hljs small">AssertionError: expected { C: 'T', TT: '30' } to deeply equal { Object (C, A, ...) }<br>    at Assertion.assertEqual (node_modules/chai/lib/chai/core/assertions.js:485:19)<br>    at Assertion.ctx.(anonymous function) (node_modules/chai/lib/chai/utils/addMethod.js:41:25)<br>    at Assertion.&lt;anonymous&gt; (node_modules/chai-exclude/lib/chai-exclude.js:119:14)<br>    at Assertion.ctx.(anonymous function) [as equals] (node_modules/chai/lib/chai/utils/overwriteMethod.js:49:33)<br>    at tests/generic_classifier/validator.js:484:34<br>    at next (native)<br>    at onFulfilled (node_modules/co/index.js:65:19)<br>    at node_modules/co/index.js:54:5<br>    at co (node_modules/co/index.js:50:10)<br>    at validateV1QueryReponse (tests/generic_classifier/validator.js:469:10)<br>    at tests/generic_classifier/validator.js:442:15<br>    at next (native)<br>    at onFulfilled (node_modules/co/index.js:65:19)<br>    at node_modules/co/index.js:54:5<br>    at co (node_modules/co/index.js:50:10)<br>    at validateResponse (tests/generic_classifier/validator.js:439:10)<br>    at tests/generic_classifier/validator.js:45:17<br>    at next (native)<br>    at onFulfilled (node_modules/co/index.js:65:19)<br>    at process._tickCallback (internal/process/next_tick.js:109:7)</code></pre>
+          </div>
+        </div>            <div id="ded981bf-83c2-488e-a873-e5a8467ddb34" class="list-group-item test failed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              TEST ID : 14118 : classifier Fast query response Silent for DIRTY sample due to Client config silent
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#ded981bf-83c2-488e-a873-e5a8467ddb34 > .test-code.collapse">Code</button>
+              <span class="test-duration ">12.236 s</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+            <p class="test-error-message">AssertionError: expected { C: &#x27;T&#x27;, TT: &#x27;30&#x27; } to deeply equal { Object (C, A, ...) }
+              <button class="btn btn-link btn-sm toggle-btn toggle-stack collapsed" data-toggle="collapse" data-target="#ded981bf-83c2-488e-a873-e5a8467ddb34 > .test-error-stack.collapse">Stack</button>
+            </p>
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">res.helper(res.constants[res.id], testConfig.CLASSIFIER_TEST_CONFIG)</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+          <div class="test-error-stack collapse">
+            <pre><code class="hljs small">AssertionError: expected { C: 'T', TT: '30' } to deeply equal { Object (C, A, ...) }<br>    at Assertion.assertEqual (node_modules/chai/lib/chai/core/assertions.js:485:19)<br>    at Assertion.ctx.(anonymous function) (node_modules/chai/lib/chai/utils/addMethod.js:41:25)<br>    at Assertion.&lt;anonymous&gt; (node_modules/chai-exclude/lib/chai-exclude.js:119:14)<br>    at Assertion.ctx.(anonymous function) [as equals] (node_modules/chai/lib/chai/utils/overwriteMethod.js:49:33)<br>    at tests/generic_classifier/validator.js:484:34<br>    at next (native)<br>    at onFulfilled (node_modules/co/index.js:65:19)<br>    at node_modules/co/index.js:54:5<br>    at co (node_modules/co/index.js:50:10)<br>    at validateV1QueryReponse (tests/generic_classifier/validator.js:469:10)<br>    at tests/generic_classifier/validator.js:442:15<br>    at next (native)<br>    at onFulfilled (node_modules/co/index.js:65:19)<br>    at node_modules/co/index.js:54:5<br>    at co (node_modules/co/index.js:50:10)<br>    at validateResponse (tests/generic_classifier/validator.js:439:10)<br>    at tests/generic_classifier/validator.js:45:17<br>    at next (native)<br>    at onFulfilled (node_modules/co/index.js:65:19)<br>    at process._tickCallback (internal/process/next_tick.js:109:7)</code></pre>
+          </div>
+        </div>            <div id="deadd83f-34fe-47bb-b6b7-57105bcf2acd" class="list-group-item test failed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              TEST ID : 14102 : classifier Cache Hit Upload query response UNKNOWN for all API versions
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#deadd83f-34fe-47bb-b6b7-57105bcf2acd > .test-code.collapse">Code</button>
+              <span class="test-duration ">12.223 s</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+            <p class="test-error-message">AssertionError: expected { Object (C, A, ...) } to deeply equal { C: &#x27;U&#x27;, TT: &#x27;30&#x27; }
+              <button class="btn btn-link btn-sm toggle-btn toggle-stack collapsed" data-toggle="collapse" data-target="#deadd83f-34fe-47bb-b6b7-57105bcf2acd > .test-error-stack.collapse">Stack</button>
+            </p>
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">res.helper(res.constants[res.id], testConfig.CLASSIFIER_TEST_CONFIG)</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+          <div class="test-error-stack collapse">
+            <pre><code class="hljs small">AssertionError: expected { Object (C, A, ...) } to deeply equal { C: 'U', TT: '30' }<br>    at Assertion.assertEqual (node_modules/chai/lib/chai/core/assertions.js:485:19)<br>    at Assertion.ctx.(anonymous function) (node_modules/chai/lib/chai/utils/addMethod.js:41:25)<br>    at Assertion.&lt;anonymous&gt; (node_modules/chai-exclude/lib/chai-exclude.js:119:14)<br>    at Assertion.ctx.(anonymous function) [as equals] (node_modules/chai/lib/chai/utils/overwriteMethod.js:49:33)<br>    at tests/generic_classifier/validator.js:480:36<br>    at next (native)<br>    at onFulfilled (node_modules/co/index.js:65:19)<br>    at node_modules/co/index.js:54:5<br>    at co (node_modules/co/index.js:50:10)<br>    at validateV1QueryReponse (tests/generic_classifier/validator.js:469:10)<br>    at tests/generic_classifier/validator.js:442:15<br>    at next (native)<br>    at onFulfilled (node_modules/co/index.js:65:19)<br>    at node_modules/co/index.js:54:5<br>    at co (node_modules/co/index.js:50:10)<br>    at validateResponse (tests/generic_classifier/validator.js:439:10)<br>    at tests/generic_classifier/validator.js:45:17<br>    at next (native)<br>    at onFulfilled (node_modules/co/index.js:65:19)<br>    at process._tickCallback (internal/process/next_tick.js:109:7)</code></pre>
+          </div>
+        </div>            <div id="eab19e03-7754-44fe-84ed-32cc47d281c4" class="list-group-item test failed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              TEST ID : 14103 : classifier Cache Hit Upload query response DIRTY for all API versions
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#eab19e03-7754-44fe-84ed-32cc47d281c4 > .test-code.collapse">Code</button>
+              <span class="test-duration ">12.221 s</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+            <p class="test-error-message">AssertionError: expected { Object (C, A, ...) } to deeply equal { Object (C, A, ...) }
+              <button class="btn btn-link btn-sm toggle-btn toggle-stack collapsed" data-toggle="collapse" data-target="#eab19e03-7754-44fe-84ed-32cc47d281c4 > .test-error-stack.collapse">Stack</button>
+            </p>
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">res.helper(res.constants[res.id], testConfig.CLASSIFIER_TEST_CONFIG)</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+          <div class="test-error-stack collapse">
+            <pre><code class="hljs small">AssertionError: expected { Object (C, A, ...) } to deeply equal { Object (C, A, ...) }<br>    at Assertion.assertEqual (node_modules/chai/lib/chai/core/assertions.js:485:19)<br>    at Assertion.ctx.(anonymous function) (node_modules/chai/lib/chai/utils/addMethod.js:41:25)<br>    at Assertion.&lt;anonymous&gt; (node_modules/chai-exclude/lib/chai-exclude.js:119:14)<br>    at Assertion.ctx.(anonymous function) [as equals] (node_modules/chai/lib/chai/utils/overwriteMethod.js:49:33)<br>    at tests/generic_classifier/validator.js:473:34<br>    at next (native)<br>    at onFulfilled (node_modules/co/index.js:65:19)<br>    at node_modules/co/index.js:54:5<br>    at co (node_modules/co/index.js:50:10)<br>    at validateV1QueryReponse (tests/generic_classifier/validator.js:469:10)<br>    at tests/generic_classifier/validator.js:442:15<br>    at next (native)<br>    at onFulfilled (node_modules/co/index.js:65:19)<br>    at node_modules/co/index.js:54:5<br>    at co (node_modules/co/index.js:50:10)<br>    at validateResponse (tests/generic_classifier/validator.js:439:10)<br>    at tests/generic_classifier/validator.js:45:17<br>    at next (native)<br>    at onFulfilled (node_modules/co/index.js:65:19)<br>    at process._tickCallback (internal/process/next_tick.js:109:7)</code></pre>
+          </div>
+        </div>            <div id="baaf3523-694b-4e1e-9381-bed817a0ec5f" class="list-group-item test failed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              TEST ID : 14115 : classifier Cache Hit Fast query response UNKNOWN for all API versions
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#baaf3523-694b-4e1e-9381-bed817a0ec5f > .test-code.collapse">Code</button>
+              <span class="test-duration ">12.224 s</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+            <p class="test-error-message">AssertionError: expected { C: &#x27;T&#x27;, TT: &#x27;30&#x27; } to deeply equal { C: &#x27;U&#x27;, TT: &#x27;30&#x27; }
+              <button class="btn btn-link btn-sm toggle-btn toggle-stack collapsed" data-toggle="collapse" data-target="#baaf3523-694b-4e1e-9381-bed817a0ec5f > .test-error-stack.collapse">Stack</button>
+            </p>
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">res.helper(res.constants[res.id], testConfig.CLASSIFIER_TEST_CONFIG)</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+          <div class="test-error-stack collapse">
+            <pre><code class="hljs small">AssertionError: expected { C: 'T', TT: '30' } to deeply equal { C: 'U', TT: '30' }<br>    at Assertion.assertEqual (node_modules/chai/lib/chai/core/assertions.js:485:19)<br>    at Assertion.ctx.(anonymous function) (node_modules/chai/lib/chai/utils/addMethod.js:41:25)<br>    at Assertion.&lt;anonymous&gt; (node_modules/chai-exclude/lib/chai-exclude.js:119:14)<br>    at Assertion.ctx.(anonymous function) [as equals] (node_modules/chai/lib/chai/utils/overwriteMethod.js:49:33)<br>    at tests/generic_classifier/validator.js:480:36<br>    at next (native)<br>    at onFulfilled (node_modules/co/index.js:65:19)<br>    at node_modules/co/index.js:54:5<br>    at co (node_modules/co/index.js:50:10)<br>    at validateV1QueryReponse (tests/generic_classifier/validator.js:469:10)<br>    at tests/generic_classifier/validator.js:442:15<br>    at next (native)<br>    at onFulfilled (node_modules/co/index.js:65:19)<br>    at node_modules/co/index.js:54:5<br>    at co (node_modules/co/index.js:50:10)<br>    at validateResponse (tests/generic_classifier/validator.js:439:10)<br>    at tests/generic_classifier/validator.js:45:17<br>    at next (native)<br>    at onFulfilled (node_modules/co/index.js:65:19)<br>    at process._tickCallback (internal/process/next_tick.js:109:7)</code></pre>
+          </div>
+        </div>            <div id="cd8d3288-10cc-4684-81e9-df3a6c5c1243" class="list-group-item test failed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              TEST ID : 14116 : classifier Cache Hit Fast query response DIRTY for all API versions
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#cd8d3288-10cc-4684-81e9-df3a6c5c1243 > .test-code.collapse">Code</button>
+              <span class="test-duration ">13.672 s</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+            <p class="test-error-message">AssertionError: expected { C: &#x27;T&#x27;, TT: &#x27;30&#x27; } to deeply equal { Object (C, A, ...) }
+              <button class="btn btn-link btn-sm toggle-btn toggle-stack collapsed" data-toggle="collapse" data-target="#cd8d3288-10cc-4684-81e9-df3a6c5c1243 > .test-error-stack.collapse">Stack</button>
+            </p>
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">res.helper(res.constants[res.id], testConfig.CLASSIFIER_TEST_CONFIG)</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+          <div class="test-error-stack collapse">
+            <pre><code class="hljs small">AssertionError: expected { C: 'T', TT: '30' } to deeply equal { Object (C, A, ...) }<br>    at Assertion.assertEqual (node_modules/chai/lib/chai/core/assertions.js:485:19)<br>    at Assertion.ctx.(anonymous function) (node_modules/chai/lib/chai/utils/addMethod.js:41:25)<br>    at Assertion.&lt;anonymous&gt; (node_modules/chai-exclude/lib/chai-exclude.js:119:14)<br>    at Assertion.ctx.(anonymous function) [as equals] (node_modules/chai/lib/chai/utils/overwriteMethod.js:49:33)<br>    at tests/generic_classifier/validator.js:473:34<br>    at next (native)<br>    at onFulfilled (node_modules/co/index.js:65:19)<br>    at node_modules/co/index.js:54:5<br>    at co (node_modules/co/index.js:50:10)<br>    at validateV1QueryReponse (tests/generic_classifier/validator.js:469:10)<br>    at tests/generic_classifier/validator.js:442:15<br>    at next (native)<br>    at onFulfilled (node_modules/co/index.js:65:19)<br>    at node_modules/co/index.js:54:5<br>    at co (node_modules/co/index.js:50:10)<br>    at validateResponse (tests/generic_classifier/validator.js:439:10)<br>    at tests/generic_classifier/validator.js:45:17<br>    at next (native)<br>    at onFulfilled (node_modules/co/index.js:65:19)<br>    at process._tickCallback (internal/process/next_tick.js:109:7)</code></pre>
+          </div>
+        </div>            <div id="d8c90b42-a841-41b9-8992-63772badf13c" class="list-group-item test failed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              TEST ID : 14104 : classifier Upload query response UNKNOWN for DIRTY sample due detection-filter(AND-OR) hit
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#d8c90b42-a841-41b9-8992-63772badf13c > .test-code.collapse">Code</button>
+              <span class="test-duration ">17.160 s</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+            <p class="test-error-message">AssertionError: expected { Object (C, A, ...) } to not deeply equal { Object (C, A, ...) }
+              <button class="btn btn-link btn-sm toggle-btn toggle-stack collapsed" data-toggle="collapse" data-target="#d8c90b42-a841-41b9-8992-63772badf13c > .test-error-stack.collapse">Stack</button>
+            </p>
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">res.helper(res.constants[res.id], testConfig.CLASSIFIER_TEST_CONFIG)</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+          <div class="test-error-stack collapse">
+            <pre><code class="hljs small">AssertionError: expected { Object (C, A, ...) } to not deeply equal { Object (C, A, ...) }<br>    at Assertion.assertEqual (node_modules/chai/lib/chai/core/assertions.js:485:19)<br>    at Assertion.ctx.(anonymous function) (node_modules/chai/lib/chai/utils/addMethod.js:41:25)<br>    at Assertion.&lt;anonymous&gt; (node_modules/chai-exclude/lib/chai-exclude.js:119:14)<br>    at Assertion.ctx.(anonymous function) [as equals] (node_modules/chai/lib/chai/utils/overwriteMethod.js:49:33)<br>    at tests/generic_classifier/validator.js:478:40<br>    at next (native)<br>    at onFulfilled (node_modules/co/index.js:65:19)<br>    at node_modules/co/index.js:54:5<br>    at co (node_modules/co/index.js:50:10)<br>    at validateV1QueryReponse (tests/generic_classifier/validator.js:469:10)<br>    at tests/generic_classifier/validator.js:442:15<br>    at next (native)<br>    at onFulfilled (node_modules/co/index.js:65:19)<br>    at node_modules/co/index.js:54:5<br>    at co (node_modules/co/index.js:50:10)<br>    at validateResponse (tests/generic_classifier/validator.js:439:10)<br>    at tests/generic_classifier/validator.js:45:17<br>    at next (native)<br>    at onFulfilled (node_modules/co/index.js:65:19)<br>    at process._tickCallback (internal/process/next_tick.js:109:7)</code></pre>
+          </div>
+        </div>            <div id="8228705b-cf0c-4480-8f1b-40d3e0b7ed98" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              TEST ID : 14108 : classifier  Upload query response UNKNOWN for DIRTY sample when sample is whitelisted
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#8228705b-cf0c-4480-8f1b-40d3e0b7ed98 > .test-code.collapse">Code</button>
+              <span class="test-duration slow">27.477 s</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">res.helper(res.constants[res.id], testConfig.CLASSIFIER_TEST_CONFIG)</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="fc8e3563-7c73-44db-9687-e1c234064495" class="list-group-item test failed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              TEST ID : 14120 : classifier  Fast query response UNKNOWN for DIRTY sample when sample is whitelisted
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#fc8e3563-7c73-44db-9687-e1c234064495 > .test-code.collapse">Code</button>
+              <span class="test-duration ">13.495 s</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+            <p class="test-error-message">AssertionError: expected { C: &#x27;T&#x27;, TT: &#x27;30&#x27; } to deeply equal { C: &#x27;U&#x27;, TT: &#x27;30&#x27; }
+              <button class="btn btn-link btn-sm toggle-btn toggle-stack collapsed" data-toggle="collapse" data-target="#fc8e3563-7c73-44db-9687-e1c234064495 > .test-error-stack.collapse">Stack</button>
+            </p>
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">res.helper(res.constants[res.id], testConfig.CLASSIFIER_TEST_CONFIG)</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+          <div class="test-error-stack collapse">
+            <pre><code class="hljs small">AssertionError: expected { C: 'T', TT: '30' } to deeply equal { C: 'U', TT: '30' }<br>    at Assertion.assertEqual (node_modules/chai/lib/chai/core/assertions.js:485:19)<br>    at Assertion.ctx.(anonymous function) (node_modules/chai/lib/chai/utils/addMethod.js:41:25)<br>    at Assertion.&lt;anonymous&gt; (node_modules/chai-exclude/lib/chai-exclude.js:119:14)<br>    at Assertion.ctx.(anonymous function) [as equals] (node_modules/chai/lib/chai/utils/overwriteMethod.js:49:33)<br>    at tests/generic_classifier/validator.js:480:36<br>    at next (native)<br>    at onFulfilled (node_modules/co/index.js:65:19)<br>    at node_modules/co/index.js:54:5<br>    at co (node_modules/co/index.js:50:10)<br>    at validateV1QueryReponse (tests/generic_classifier/validator.js:469:10)<br>    at tests/generic_classifier/validator.js:442:15<br>    at next (native)<br>    at onFulfilled (node_modules/co/index.js:65:19)<br>    at node_modules/co/index.js:54:5<br>    at co (node_modules/co/index.js:50:10)<br>    at validateResponse (tests/generic_classifier/validator.js:439:10)<br>    at tests/generic_classifier/validator.js:45:17<br>    at next (native)<br>    at onFulfilled (node_modules/co/index.js:65:19)<br>    at process._tickCallback (internal/process/next_tick.js:109:7)</code></pre>
+          </div>
+        </div>            <div id="52179834-2617-4617-b736-846d64660866" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              TEST ID : 14107 : classifier  Upload query response UNKNOWN for DIRTY sample when sfvecmd5 is mitigated
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#52179834-2617-4617-b736-846d64660866 > .test-code.collapse">Code</button>
+              <span class="test-duration slow">12.232 s</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">res.helper(res.constants[res.id], testConfig.CLASSIFIER_TEST_CONFIG)</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="76edf04c-33d4-4eae-ae61-2b0f40363931" class="list-group-item test failed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              TEST ID : 14119 : classifier  Fast query response UNKNOWN for DIRTY sample when sfvecmd5 is mitigated
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#76edf04c-33d4-4eae-ae61-2b0f40363931 > .test-code.collapse">Code</button>
+              <span class="test-duration ">12.252 s</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+            <p class="test-error-message">AssertionError: expected { C: &#x27;T&#x27;, TT: &#x27;30&#x27; } to deeply equal { C: &#x27;U&#x27;, TT: &#x27;30&#x27; }
+              <button class="btn btn-link btn-sm toggle-btn toggle-stack collapsed" data-toggle="collapse" data-target="#76edf04c-33d4-4eae-ae61-2b0f40363931 > .test-error-stack.collapse">Stack</button>
+            </p>
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">res.helper(res.constants[res.id], testConfig.CLASSIFIER_TEST_CONFIG)</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+          <div class="test-error-stack collapse">
+            <pre><code class="hljs small">AssertionError: expected { C: 'T', TT: '30' } to deeply equal { C: 'U', TT: '30' }<br>    at Assertion.assertEqual (node_modules/chai/lib/chai/core/assertions.js:485:19)<br>    at Assertion.ctx.(anonymous function) (node_modules/chai/lib/chai/utils/addMethod.js:41:25)<br>    at Assertion.&lt;anonymous&gt; (node_modules/chai-exclude/lib/chai-exclude.js:119:14)<br>    at Assertion.ctx.(anonymous function) [as equals] (node_modules/chai/lib/chai/utils/overwriteMethod.js:49:33)<br>    at tests/generic_classifier/validator.js:480:36<br>    at next (native)<br>    at onFulfilled (node_modules/co/index.js:65:19)<br>    at node_modules/co/index.js:54:5<br>    at co (node_modules/co/index.js:50:10)<br>    at validateV1QueryReponse (tests/generic_classifier/validator.js:469:10)<br>    at tests/generic_classifier/validator.js:442:15<br>    at next (native)<br>    at onFulfilled (node_modules/co/index.js:65:19)<br>    at node_modules/co/index.js:54:5<br>    at co (node_modules/co/index.js:50:10)<br>    at validateResponse (tests/generic_classifier/validator.js:439:10)<br>    at tests/generic_classifier/validator.js:45:17<br>    at next (native)<br>    at onFulfilled (node_modules/co/index.js:65:19)<br>    at process._tickCallback (internal/process/next_tick.js:109:7)</code></pre>
+          </div>
+        </div>            <div id="b698e789-c468-4a0e-9f7d-d317dc37aba4" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              TEST ID : 14111 : classifier UPLOAD query low sensitivity test
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#b698e789-c468-4a0e-9f7d-d317dc37aba4 > .test-code.collapse">Code</button>
+              <span class="test-duration slow">22.168 s</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">res.helper(res.constants[res.id], testConfig.CLASSIFIER_TEST_CONFIG)</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="290ab6ba-153d-4662-a061-5ecf5f22e804" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              TEST ID : 14112 : classifier UPLOAD query medium sensitivity test
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#290ab6ba-153d-4662-a061-5ecf5f22e804 > .test-code.collapse">Code</button>
+              <span class="test-duration slow">23.912 s</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">res.helper(res.constants[res.id], testConfig.CLASSIFIER_TEST_CONFIG)</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="ce3ccb48-f875-4f86-9830-d91a355e7c19" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              TEST ID : 14113 : classifier UPLOAD query high sensitivity test
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#ce3ccb48-f875-4f86-9830-d91a355e7c19 > .test-code.collapse">Code</button>
+              <span class="test-duration slow">22.242 s</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">res.helper(res.constants[res.id], testConfig.CLASSIFIER_TEST_CONFIG)</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="218a9841-cb8d-474c-bb96-e0a850edd3bf" class="list-group-item test failed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              TEST ID : 14121 : classifier FAST query with samplemd5 is NONE
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#218a9841-cb8d-474c-bb96-e0a850edd3bf > .test-code.collapse">Code</button>
+              <span class="test-duration ">12.254 s</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+            <p class="test-error-message">AssertionError: expected { C: &#x27;T&#x27;, TT: &#x27;30&#x27; } to deeply equal { Object (C, A, ...) }
+              <button class="btn btn-link btn-sm toggle-btn toggle-stack collapsed" data-toggle="collapse" data-target="#218a9841-cb8d-474c-bb96-e0a850edd3bf > .test-error-stack.collapse">Stack</button>
+            </p>
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">res.helper(res.constants[res.id], testConfig.CLASSIFIER_TEST_CONFIG)</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+          <div class="test-error-stack collapse">
+            <pre><code class="hljs small">AssertionError: expected { C: 'T', TT: '30' } to deeply equal { Object (C, A, ...) }<br>    at Assertion.assertEqual (node_modules/chai/lib/chai/core/assertions.js:485:19)<br>    at Assertion.ctx.(anonymous function) (node_modules/chai/lib/chai/utils/addMethod.js:41:25)<br>    at Assertion.&lt;anonymous&gt; (node_modules/chai-exclude/lib/chai-exclude.js:119:14)<br>    at Assertion.ctx.(anonymous function) [as equals] (node_modules/chai/lib/chai/utils/overwriteMethod.js:49:33)<br>    at tests/generic_classifier/validator.js:496:36<br>    at next (native)<br>    at onFulfilled (node_modules/co/index.js:65:19)<br>    at node_modules/co/index.js:54:5<br>    at co (node_modules/co/index.js:50:10)<br>    at validateV1QueryReponse (tests/generic_classifier/validator.js:469:10)<br>    at tests/generic_classifier/validator.js:442:15<br>    at next (native)<br>    at onFulfilled (node_modules/co/index.js:65:19)<br>    at node_modules/co/index.js:54:5<br>    at co (node_modules/co/index.js:50:10)<br>    at validateResponse (tests/generic_classifier/validator.js:439:10)<br>    at tests/generic_classifier/validator.js:45:17<br>    at next (native)<br>    at onFulfilled (node_modules/co/index.js:65:19)<br>    at process._tickCallback (internal/process/next_tick.js:109:7)</code></pre>
+          </div>
+        </div>            <div id="890b4ab6-f9fb-4330-b8ba-6554811021ed" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              TEST ID : 14122 : classifier FAST query with sfvecmd5 is NONE
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#890b4ab6-f9fb-4330-b8ba-6554811021ed > .test-code.collapse">Code</button>
+              <span class="test-duration slow">34.99 s</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">res.helper(res.constants[res.id], testConfig.CLASSIFIER_TEST_CONFIG)</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="16f85067-38dd-4aee-bc43-9984ed254018" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              TEST ID : 14109 : classifier UPLOAD query with samplemd5 is NONE
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#16f85067-38dd-4aee-bc43-9984ed254018 > .test-code.collapse">Code</button>
+              <span class="test-duration slow">27.430 s</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">res.helper(res.constants[res.id], testConfig.CLASSIFIER_TEST_CONFIG)</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="15a36239-13dd-420d-8d78-57d33b3e6f87" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              TEST ID : 14110 : classifier UPLOAD query with sfvecmd5 is NONE
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#15a36239-13dd-420d-8d78-57d33b3e6f87 > .test-code.collapse">Code</button>
+              <span class="test-duration slow">28.619 s</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">res.helper(res.constants[res.id], testConfig.CLASSIFIER_TEST_CONFIG)</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="9d2d6886-28d6-4542-9c0d-0ad11dbdbe5e" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              TEST ID : 14123 : classifier FAST query low sensitivity test
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#9d2d6886-28d6-4542-9c0d-0ad11dbdbe5e > .test-code.collapse">Code</button>
+              <span class="test-duration slow">27.272 s</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">res.helper(res.constants[res.id], testConfig.CLASSIFIER_TEST_CONFIG)</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="a476972a-5cd4-44b9-adff-e3485c53aa38" class="list-group-item test failed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              TEST ID : 14124 : classifier FAST query medium sensitivity test
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#a476972a-5cd4-44b9-adff-e3485c53aa38 > .test-code.collapse">Code</button>
+              <span class="test-duration ">22.255 s</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+            <p class="test-error-message">AssertionError: expected { C: &#x27;T&#x27;, TT: &#x27;30&#x27; } to deeply equal { Object (C, A, ...) }
+              <button class="btn btn-link btn-sm toggle-btn toggle-stack collapsed" data-toggle="collapse" data-target="#a476972a-5cd4-44b9-adff-e3485c53aa38 > .test-error-stack.collapse">Stack</button>
+            </p>
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">res.helper(res.constants[res.id], testConfig.CLASSIFIER_TEST_CONFIG)</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+          <div class="test-error-stack collapse">
+            <pre><code class="hljs small">AssertionError: expected { C: 'T', TT: '30' } to deeply equal { Object (C, A, ...) }<br>    at Assertion.assertEqual (node_modules/chai/lib/chai/core/assertions.js:485:19)<br>    at Assertion.ctx.(anonymous function) (node_modules/chai/lib/chai/utils/addMethod.js:41:25)<br>    at Assertion.&lt;anonymous&gt; (node_modules/chai-exclude/lib/chai-exclude.js:119:14)<br>    at Assertion.ctx.(anonymous function) [as equals] (node_modules/chai/lib/chai/utils/overwriteMethod.js:49:33)<br>    at tests/generic_classifier/validator.js:579:34<br>    at next (native)<br>    at onFulfilled (node_modules/co/index.js:65:19)<br>    at node_modules/co/index.js:54:5<br>    at co (node_modules/co/index.js:50:10)<br>    at validateV5QueryReponse (tests/generic_classifier/validator.js:549:10)<br>    at tests/generic_classifier/validator.js:458:17<br>    at next (native)<br>    at onFulfilled (node_modules/co/index.js:65:19)<br>    at node_modules/co/index.js:54:5<br>    at co (node_modules/co/index.js:50:10)<br>    at validateResponse (tests/generic_classifier/validator.js:439:10)<br>    at tests/generic_classifier/validator.js:45:17<br>    at next (native)<br>    at onFulfilled (node_modules/co/index.js:65:19)<br>    at process._tickCallback (internal/process/next_tick.js:109:7)</code></pre>
+          </div>
+        </div>            <div id="15db3dbd-0e40-4fb6-85b4-a20dbba9910c" class="list-group-item test failed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              TEST ID : 14125 : classifier FAST query high sensitivity test
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#15db3dbd-0e40-4fb6-85b4-a20dbba9910c > .test-code.collapse">Code</button>
+              <span class="test-duration ">23.594 s</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+            <p class="test-error-message">AssertionError: expected { C: &#x27;T&#x27;, TT: &#x27;30&#x27; } to deeply equal { Object (C, A, ...) }
+              <button class="btn btn-link btn-sm toggle-btn toggle-stack collapsed" data-toggle="collapse" data-target="#15db3dbd-0e40-4fb6-85b4-a20dbba9910c > .test-error-stack.collapse">Stack</button>
+            </p>
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">res.helper(res.constants[res.id], testConfig.CLASSIFIER_TEST_CONFIG)</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+          <div class="test-error-stack collapse">
+            <pre><code class="hljs small">AssertionError: expected { C: 'T', TT: '30' } to deeply equal { Object (C, A, ...) }<br>    at Assertion.assertEqual (node_modules/chai/lib/chai/core/assertions.js:485:19)<br>    at Assertion.ctx.(anonymous function) (node_modules/chai/lib/chai/utils/addMethod.js:41:25)<br>    at Assertion.&lt;anonymous&gt; (node_modules/chai-exclude/lib/chai-exclude.js:119:14)<br>    at Assertion.ctx.(anonymous function) [as equals] (node_modules/chai/lib/chai/utils/overwriteMethod.js:49:33)<br>    at tests/generic_classifier/validator.js:579:34<br>    at next (native)<br>    at onFulfilled (node_modules/co/index.js:65:19)<br>    at node_modules/co/index.js:54:5<br>    at co (node_modules/co/index.js:50:10)<br>    at validateV5QueryReponse (tests/generic_classifier/validator.js:549:10)<br>    at tests/generic_classifier/validator.js:458:17<br>    at next (native)<br>    at onFulfilled (node_modules/co/index.js:65:19)<br>    at node_modules/co/index.js:54:5<br>    at co (node_modules/co/index.js:50:10)<br>    at validateResponse (tests/generic_classifier/validator.js:439:10)<br>    at tests/generic_classifier/validator.js:45:17<br>    at next (native)<br>    at onFulfilled (node_modules/co/index.js:65:19)<br>    at process._tickCallback (internal/process/next_tick.js:109:7)</code></pre>
+          </div>
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+    </div>
+
+    <footer>
+      <div class="container">
+        <p>Report generated by <a href="http://adamgruber.github.io/mochawesome/" target="_blank">mochawesome</a>.<br>Designed and built by <a href="https://github.com/adamgruber" target="_blank">adamgruber</a>. &copy;2023.</p>
+      </div>
+    </footer>
+
+    <!-- Nav Menu -->
+    <div class="nav-menu-wrap">
+      <div class="menu-overlay close-menu"></div>
+      <nav class="menu">
+        <button class="nav-menu-btn close-menu"><i class="icon-failed"></i></button>
+        <ul class="list-unstyled main-menu">
+                <li class="nav-menu-item">
+                <a href="#ef173043-0745-4750-b667-600b9d15af97" class="nav-menu-item-link has-failures">ESVM Classifier Automation</a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/vendor.js"></script>
+    <script src="js/mochawesome.js"></script>
+  </body>
+</html>
